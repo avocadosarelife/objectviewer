@@ -1,0 +1,9 @@
+<div class="button-container">
+    <button (click)="toggleColor()">Toggle Color</button>
+</div>
+<div [ngClass]="{'with-color': color}" *ngIf="tree">
+
+    <div class="tree-container">
+        <app-node [node]=tree></app-node>
+    </div>
+</div>

@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    max-width: 80vw;
+    margin: 32px auto;
+}
+
+button {
+    padding: 8px;
+    border-radius: 4%;
+    background-color: white;
+}
+
+input[type=text], input[type=number] {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+}
+
+textarea {
+    width: 90%;
+    resize: none;
+}
+
+.with-color div {
+    background-color: rgba(90, 145, 213, 0.1);
+}

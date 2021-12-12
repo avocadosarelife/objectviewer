@@ -1,0 +1,14 @@
+<div  *ngFor="let subnode of node">
+    <ng-container *ngIf="getType(subnode) == 'boolean'">
+        <input type="checkbox" name="hello bool" id="" [checked]="subnode">
+    </ng-container>
+    <ng-container *ngIf="getType(subnode) == 'string'">
+        <input type="text" name="" id="" cols="30" rows="10" value={{subnode}}>
+    </ng-container>
+    <ng-container *ngIf="getType(subnode) == 'number'">
+        <input type="number" value={{subnode}}>
+    </ng-container>
+    <ng-container *ngIf="getType(subnode) == 'object'">
+        <app-node [node]=subnode></app-node>
+    </ng-container>
+</div>
